@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   color: $default;
+  background-color: #fff;
   font-size: 16px;
   line-height: 1.5;
   @extend %dmsans-500;
@@ -22,9 +23,21 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.container-big {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  margin-bottom: 35px;
+  font-size: 36px;
+  color: $title;
+  @extend %dmsans-700;
+}
 
 a {
-  color: #7b7b7b;
+  color: inherit;
   font-size: 14px;
   @extend %rubik-400;
 }
