@@ -1,0 +1,237 @@
+.top-slider {
+  padding: 220px 0 45px;
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+    margin-bottom: 206px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    max-width: 470px;
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #243f4d;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    @extend %rubik-400;
+  }
+
+  &__link {
+    position: relative;
+    padding: 20px 100px 20px 25px;
+    @extend %btn;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      width: 26px;
+      height: 10px;
+      background-image: url('../images/icons/arrow-btn.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 0 10px;
+
+      button {
+        width: 30px;
+        height: 30px;
+        border: none;
+        outline: transparent;
+        border-radius: 50%;
+        background-color: #fde3cc;
+        color: #243f4d;
+        font-size: 12px;
+        @extend %rubik-500;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #fff;
+        }
+      }
+
+    }
+
+  }
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 170px;
+  margin-bottom: 70px;
+  background-color: #fef7f0;
+
+  &__item {
+    &+& {
+      border-left: 1px solid #e8e4df;
+    }
+  }
+
+  &__content {
+    max-width: 250px;
+    margin: 45px auto 0;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: '';
+      top: 4px;
+      left: -74px;
+      height: 54px;
+      width: 54px;
+      position: absolute;
+      background-repeat: no-repeat;
+    }
+
+    &--support {
+      max-width: 220px;
+    }
+
+    &--support::before {
+      background-image: url('../images/icons/info-support.svg');
+    }
+
+    &--delivery::before {
+      background-image: url('../images/icons/info-delivery.svg');
+    }
+
+    &--payment::before {
+      background-image: url('../images/icons/info-payment.svg');
+    }
+
+  }
+
+
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: $title;
+    @extend %dmsans-700;
+  }
+
+  &__text {
+    color: #585858;
+    @extend %dmsans-400;
+  }
+}
+
+.products {
+  text-align: center;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 45px 25px;
+  }
+
+  &__filter-btns {
+    margin-bottom: 60px;
+  }
+
+  &__btn {
+    margin: 0 8px;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+    font-size: 16px;
+    color: #8b8b8b;
+    @extend %dmsans-700;
+  }
+
+  .mixitup-control-active {
+    color: #191919;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    max-width: 270px;
+    min-height: 380px;
+    overflow: hidden;
+
+    &:hover {
+      .products__link-box {
+        transform: translateX(0);
+      }
+    }
+  }
+
+
+  &__img-box {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+
+
+  &__link-box {
+    transform: translateX(-200%);
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+  }
+
+  &__link {
+    &+& {
+      margin-left: 12px;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    transition: all 0.3s;
+
+    path {
+      transition: fill 0.3s;
+    }
+  }
+
+  &__link:hover {
+    background-color: #a3bbc8;
+
+    path {
+      fill: #f9fafb;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    color: #a3bbc8;
+    @extend %dmsans-700;
+  }
+}
