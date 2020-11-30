@@ -3,10 +3,14 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-
 @import 'components/header';
 @import 'components/footer';
-@import 'home/main';
+@import 'home/top-slider';
+@import 'home/info';
+@import 'home/products';
+@import 'home/products-cards';
+@import 'home/new-design';
+@import 'home/video';
+@import 'components/blog';
 
 
-@import 'media';
