@@ -1,0 +1,59 @@
+.new-design {
+  text-align: center;
+
+  &__filter-btns {
+    margin-bottom: 60px;
+  }
+
+  &__btn {
+    margin: 0 8px;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+    font-size: 16px;
+    color: #8b8b8b;
+    @extend %dmsans-700;
+  }
+
+  .mixitup-control-active {
+    color: #191919;
+  }
+
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 40px;
+    margin-bottom: 120px;
+  }
+
+  &__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 4px;
+    max-width: 370px;
+    min-height: 246px;
+    text-align: left;
+  }
+
+  &__inner {
+    padding-left: 28px;
+    padding-top: 32px;
+    max-width: 210px;
+    color: $title;
+    @extend %dmsans-700;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  &__subtitle {
+    color: #a3bbc8;
+  }
+
+
+
+}

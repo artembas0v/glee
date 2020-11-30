@@ -14,4 +14,12 @@ $(function () {
     }
   });
 
+  var mixer = mixitup('.new-design__content', {
+    selectors: {
+      control: '.new-design__btn'
+    }
+  });
+
+  
+
 });
