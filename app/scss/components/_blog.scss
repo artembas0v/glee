@@ -1,5 +1,26 @@
 .blog {
   padding: 110px 0 15px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    @extend %dmsans-700;
+  }
+
+  &__link {
+    padding-right: 24px;
+    color: #243f4d;
+    position: relative;
+
+    &::after {
+      content: ">";
+      width: 8px;
+      height: 12px;
+      right: 0;
+      position: absolute;
+    }
+  }
 }
 
 .articles {
@@ -64,13 +85,13 @@
 
 .partners {
 
-  background-color:#fef7f0;
+  background-color: #fef7f0;
   margin-top: -190px;
   padding: 265px 0 80px;
+
   &__items {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 }
-
