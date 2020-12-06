@@ -50,6 +50,7 @@
   &__img {
     max-width: 220px;
     min-height: 206px;
+    object-fit: contain;
   }
 
   &__link-box {
@@ -110,5 +111,3 @@
     @extend %dmsans-700;
   }
 }
-
-

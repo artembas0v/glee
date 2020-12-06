@@ -1,0 +1,30 @@
+.statistics {
+  
+  background-color: #fcd7b6;
+
+  &__items {
+    min-height: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__item {
+    color: #243f4d;
+    @extend %dmsans-700;
+    
+  }
+
+  &__img {
+    margin: 0 auto 8px;
+  }
+  &__num {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 36px;
+  }
+  &__text {
+    font-size: 18px;
+  }
+}
