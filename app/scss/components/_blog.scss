@@ -12,6 +12,7 @@
     padding-right: 24px;
     color: #243f4d;
     position: relative;
+    transition: color 0.3s;
 
     &::after {
       content: ">";
@@ -20,24 +21,27 @@
       right: 0;
       position: absolute;
     }
+    &:hover {
+      color: #a3bbc8;
+    }
   }
 }
 
-.articles {
-  &__items {
-    display: flex;
-    justify-content: space-between;
-  }
+.articles-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
-  &__item {
-    display: flex;
-    flex-direction: column;
-    max-width: 370px;
-    border-radius: 2px;
-    background-color: #fff;
-  }
+.articles {
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+  border-radius: 2px;
+  background-color: #fff;
+
 
   &__img {
+    width: 370px;
     height: 250px;
     object-fit: cover;
   }
@@ -53,13 +57,18 @@
     color: #fff;
     background-color: #a3bbc8;
     @extend %dmsans-700;
+    transition: 0.3s;
+
+    &:hover {
+      color: #222933;
+    }
   }
 
 
   &__title {
-    max-width: 300px;
+    max-width: 310px;
     margin: 20px auto 0;
-    padding-bottom: 14px;
+    padding: 0 10px 14px;
     font-size: 18px;
     color: $title;
     @extend %dmsans-500;
@@ -76,10 +85,25 @@
   &__date,
   &__link-author {
     margin-right: 28px;
+    padding-left: 20px;
     text-transform: uppercase;
     font-size: 12px;
     color: #222933;
     @extend %rubik-400;
+    position: relative;
+
+    &:before {
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 15px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../images/icons/calendar.svg');
+      position: absolute;
+
+    }
   }
 }
 

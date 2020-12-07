@@ -33,14 +33,21 @@
     font-size: 18px;
     color: #fffefe;
     border: none;
+    outline: transparent;
     background-color: #a3bbc8;
     @extend %rubik-500;
     cursor: pointer;
+    transition: all 0.3s;
 
     &--color {
       color: #a3bbc8;
       background-color: #fff;
       border: 1px solid #a3bbc8;
+    }
+
+    &:hover {
+      color: $title;
+      background-color: #d0e6f1;
     }
   }
 

@@ -27,6 +27,7 @@
     background-color: #a3bbc8;
     color: #f6f8fa;
     position: relative;
+    transition: color 0.3s;
 
     &::after {
       content: '';
@@ -39,6 +40,10 @@
       background-position: center center;
       background-image: url('../images/icons/arrow-team.svg');
       position: absolute;
+    }
+
+    &:hover {
+      color: $title;
     }
   }
 
@@ -96,6 +101,11 @@
     height: 40px;
     border-radius: 50%;
     background-color: #f6f6f6;
+    transition: color 0.3s;
+
+    &:hover {
+      background-color:#e4e3e3;
+    }
     
     svg {
       width: 22px;

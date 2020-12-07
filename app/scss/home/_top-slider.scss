@@ -32,6 +32,10 @@
     @extend %btn;
     transition: all 0.3s;
 
+    &:hover {
+      color: $title;
+    }
+
     &:active {
       padding: 18px 90px 18px 22px;
     }
