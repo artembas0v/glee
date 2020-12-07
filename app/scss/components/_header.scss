@@ -27,6 +27,10 @@
   &__link {
     font-size: 15px;
     color: $default;
+    transition: color 0.3s;
+    &:hover {
+      color: #a3bbc8;
+    }
   }
 }
 
@@ -58,12 +62,25 @@
     }
 
     &--search {
+      background-color: #edf1f4;
+
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+
       &:hover {
-        background-color: #edf1f4;
+        background-color: #a3bbc8;
+         fill: #f9fafb;
       }
     }
 
     &--menu {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
       fill: #f9fafb;
       background-color: #a3bbc8;
     }
@@ -78,6 +95,11 @@
 
     &--heart,
     &--cart {
+      svg {
+        width: 19px;
+        height: 17px;
+      }
+
       position: relative;
       padding: 7px 0 7px;
     }
@@ -95,10 +117,11 @@
     margin: 0 20px 0;
     padding: 10px 0 10px;
     border-radius: 25px;
+    background-color: #fcd7b6;
     transition: all 0.3s;
 
     &:hover {
-      background-color: #fcd7b6;
+      background-color: #ffc691;
     }
   }
 

@@ -10,7 +10,7 @@ $(function () {
 
   var mixer = mixitup('.products__content', {
     selectors: {
-      control: '.products__btn'
+      control: '.filter__btn'
     }
   });
 

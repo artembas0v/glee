@@ -1,0 +1,11 @@
+.top {
+  padding: 26px 0 26px;
+  background-color: #edf1f4;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    @extend %rubik-300;
+  }
+}
+

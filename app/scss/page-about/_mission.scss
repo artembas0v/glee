@@ -1,0 +1,91 @@
+.mission {
+  padding: 120px 0 120px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  &__inner {
+    max-width: 570px;
+    line-height: 1.8;
+    color: #243f4d;
+    @extend %rubik-400;
+  }
+
+  &__years {
+    margin: 64px 0 20px;
+    display: flex;
+  }
+
+  &__number {
+    margin-right: 24px;
+    font-size: 140px;
+    line-height: 1;
+    @extend %rubik-700;
+  }
+
+
+  &__text {
+    margin-top: 40px;
+  }
+
+  &__info-text {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e6eaf0;
+  }
+
+  &__items {
+    display: flex;
+    margin-top: 32px;
+    line-height: 1.2;
+  }
+
+  &__item {
+    &+&{
+      border-left: 1px solid #e6eaf0;
+      padding-left: 88px;
+    }
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    
+    font-size: 36px;
+    @extend %dmsans-700;
+    position: relative;
+
+    &::before {
+      content:"";
+      top: 10px;
+      left: 20px; 
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--projects::before{
+      left: 0;
+      width: 40px;
+      height: 40px;
+     background-image: url('../images/projects.svg');
+    }
+    &--revenue::before {
+      width: 48px;
+      height: 44px;
+      background-image: url('../images/revenue.svg');
+    }
+    &--awards::before {
+      width: 45px;
+      height: 45px;
+      background-image: url('../images/awards.svg');
+    }
+
+  }
+
+  &__descr {
+    font-size: 16px;
+  }
+
+
+}

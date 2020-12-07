@@ -1,0 +1,32 @@
+.breadcrumbs {
+  &__list {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #979ba0;
+    @extend %rubik-400;
+  }
+
+  &__item {
+    padding-right: 20px;
+    position: relative;
+
+    &::after {
+      content: '/';
+      position: absolute;
+      right: 6px;
+      top: 0;
+
+    }
+
+    &:last-child {
+      padding-right: 0;
+      
+      &::after {
+
+        display: none;
+      }
+    }
+  }
+
+}

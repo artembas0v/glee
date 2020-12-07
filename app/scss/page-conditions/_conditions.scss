@@ -1,0 +1,29 @@
+.conditions {
+  padding-top: 110px;
+  color: #243f4d;
+  font-size: 16px;
+  @extend %rubik-400;
+
+  &__box {
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 24px;
+     @extend %rubik-500;
+  }
+  
+  &__list {
+    display: block;
+    list-style-type: decimal-leading-zero;
+    margin: 0 -32px 0 32px;
+  }
+  &__item {
+    margin-bottom: 28px;
+    padding-left: 6px;
+  }
+}

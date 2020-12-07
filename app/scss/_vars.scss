@@ -17,6 +17,12 @@ $title:#191919;
   font-weight: 700;
 }
 
+%rubik-300 {
+  font-family: 'Rubik-Light',
+  sans-serif;
+  font-weight: 300;
+}
+
 %rubik-400 {
   font-family: 'Rubik-Regular',sans-serif;
   font-weight: 400;
@@ -27,10 +33,15 @@ $title:#191919;
   font-weight: 500;
 }
 
+%rubik-700 {
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
+}
+
 %btn {
   background-color: #a3bbc8;
   font-size: 15px;
-  line-height: 12px;
+  line-height: 1;
   color: #fff;
   @extend %rubik-500;
 }
